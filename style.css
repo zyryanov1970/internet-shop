@@ -1,0 +1,144 @@
+/* Здесь делаем стили для домашнего задания № 3 по курсу HTML/CSS */
+
+/* Создаем фон #f8f8f8 для всех страниц сайта */
+body {
+    background: #f8f8f8;
+}
+
+/* Меняем цвета новых и посещенных ссылок на один цвет */
+a {
+    color: darkcyan;
+}
+
+/* Задаем изменение цвета не посещенной ссылки при наведении указателя мыши */
+a:link:hover {
+    color: red;
+}
+
+/* Задаем изменение цвета не посещенной ссылки при наведении указателя мыши */
+a:visited:hover {
+    color: red;
+}
+
+/* Прописываем класс для подвала */
+.footer {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: darkblue;
+}
+
+/* Создаем стиль меню */
+.menu li {;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    border: 1px solid darkcyan;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:azure;
+}
+
+/* Форматируем поле E-mail при получении фокуса */
+.input:focus {
+    color: green;
+    background-color: lightyellow;
+}
+
+/* Делаем первую букву текстового поля заглавной */
+.inputA.focus {
+    text-transform: capitalize;
+}
+
+/* Форматируем заголовки 2-го уровня h2 */
+h2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400px;
+    background-color: #eaeaea;
+}
+
+h1 {
+    color: darkblue;
+}
+
+/* Задаем стиль цвета фирменного шрифта */
+firmtext {
+    color: darkblue;
+}
+
+/* Задаем стиль для краткого описания товара */
+.good-short {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* Задаем стиль для списка характеристик товара */
+.good-char li {
+    margin-left: 5px;
+    list-style-image: url(img/marker.png);
+    display: list-item;
+    color: darkcyan;
+    background-color: azure;
+    font-size: 16px;
+}
+
+/* Задаем стиль подробного описания товара */
+p.good-full {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Задаем стиль полям формы */
+input {
+    border: 2px solid grey;
+    padding-bottom: 3px;
+    padding: 2px;
+    padding-top: 2px;
+    background-color: lavender;
+    width: 300px;
+    height: 20px;
+    margin: 3px;
+    color: blue;
+    text-transform: capitalize;
+}
+textarea {
+    border: 2px solid grey;
+    padding-bottom: 3px;
+    padding: 2px;
+    padding-top: 2px;
+    background-color: lavender;
+    width: 300px;
+    height: 20px;
+    margin: 3px;
+    color: blue;
+    text-transform: capitalize;
+}
+
+/* Задаем стиль для текста в таблице */
+td {
+    text-align: center;
+    vertical-align: top;
+    word-wrap: normal;
+}
+
+/* Делаем стиль заголовков таблицы */
+th {
+    color: darkblue;
+    border-bottom: 1px solid darkblue;
+}
+
+/* Задаем стиль простой строки в таблице */
+.tr1 {
+    border-bottom: 1px dotted black;
+}
