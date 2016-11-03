@@ -20,27 +20,42 @@ a:visited:hover {
     color: red;
 }
 
+/* Создаем стиль родительского блока */
+.container {
+    display: inline-block;
+    width: 900px;
+    align-items: center;
+}
+
+
 /* Прописываем класс для подвала */
 .footer {
     font-family: sans-serif;
     font-size: 13px;
     color: darkblue;
+    background-color: lightyellow;
+    height: 102px;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
 }
 
 /* Создаем стиль меню */
 .menu li {;
     list-style-type: none;
+    vertical-align: middle;
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin: 10px;
+    margin: 12px;
     border: 1px solid darkcyan;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 16px;
     background-color:azure;
 }
 
@@ -119,10 +134,11 @@ textarea {
     padding-top: 2px;
     background-color: lavender;
     width: 300px;
-    height: 20px;
+    height: 80px;
     margin: 3px;
     color: blue;
     text-transform: capitalize;
+    overflow: scroll;
 }
 
 /* Задаем стиль для текста в таблице */
@@ -141,4 +157,62 @@ th {
 /* Задаем стиль простой строки в таблице */
 .tr1 {
     border-bottom: 1px dotted black;
+}
+
+/* Задаем расположение текста справа от картинки */
+.good_pic {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.block1 {
+    display: block;
+    height: 150px;
+}
+
+.bye_butt {
+    height: 32px;
+    width: 120px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+    border-radius: 12px;
+    border: 1px solid darkcyan;
+}
+
+.bye_butt:hover {
+    height: 32px;
+    width: 120px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: blue;
+    border-radius: 12px;
+    border: 1px solid darkcyan;
+}
+
+.bye_butt:active {
+    height: 32px;
+    width: 120px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: lightgreen;
+    border-radius: 12px;
+    border: 1px solid darkcyan;
+}
+
+.head_block {
+    background: lightgoldenrodyellow;
+    width: 900px;
+    height: 102px;
+    vertical-align: middle;
+    margin-bottom: -10px;
+}
+
+.good_block2 {
+    width: 180px;
+    display: inline-block;
+    text-align: center;
 }
