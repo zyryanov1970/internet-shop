@@ -5,28 +5,65 @@ body {
     background: #f8f8f8;
 }
 
-/* Меняем цвета новых и посещенных ссылок на один цвет */
+/* Меняем цвета новых и посещенных ссылок на один цвет и убираем подчеркивания */
 a {
     color: darkcyan;
-}
-
-/* Задаем изменение цвета не посещенной ссылки при наведении указателя мыши */
-a:link:hover {
-    color: red;
-}
-
-/* Задаем изменение цвета не посещенной ссылки при наведении указателя мыши */
-a:visited:hover {
-    color: red;
+    text-decoration: none;
+    
 }
 
 /* Создаем стиль родительского блока */
 .container {
     display: inline-block;
     width: 900px;
-    align-items: center;
 }
 
+/* Создаем стили новостей */
+.news {
+    width: 300px;
+    display: inline;
+    float: right;
+    margin-top: 25px;
+}
+
+.news_header {
+    padding-left: 8px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.news_block {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.news_block:hover {
+    background-color: lightcyan;
+}
+
+.news_date {
+    color: blue;
+    font-weight: bold;
+}
+
+.news_head {
+    color: darkblue;
+    font-weight: lighter;
+}
+
+.news_content {
+    font-size: 12px;
+    font-style: italic;
+    color: darkcyan;
+}
+
+.news_full {
+    font-size: 14px;
+    color: darkcyan;
+}
 
 /* Прописываем класс для подвала */
 .footer {
@@ -42,22 +79,42 @@ a:visited:hover {
 }
 
 /* Создаем стиль меню */
-.menu li {;
+
+.menu li {
     list-style-type: none;
     vertical-align: middle;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin: 12px;
-    border: 1px solid darkcyan;
-    border-radius: 12px;
+    outline: 2px solid darkcyan;
     text-align: center;
     padding-top: 6px;
     padding-bottom: 6px;
-    padding-left: 10px;
+    padding-left: 16px;
     padding-right: 16px;
     background-color:azure;
 }
+
+/* Меню при наведении указателя мыши */
+
+.menu li:hover {
+    list-style-type: none;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: lightblue;
+    outline-style: solid;
+    outline-color: yellow;
+    outline-width: 6px;
+}
+
 
 /* Форматируем поле E-mail при получении фокуса */
 .input:focus {
@@ -127,6 +184,38 @@ input {
     color: blue;
     text-transform: capitalize;
 }
+
+.cont_butt_OK {
+    border: 2px solid grey;
+    padding-bottom: 4px;
+    padding: 4px;
+    padding-top: 4px;
+    background-color: lightcyan;
+    margin-right: 15px;
+    width: 100px;
+    height: 30px;
+    vertical-align: middle;
+    color: darkcyan;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
+.cont_butt_KO {
+    border: 2px solid grey;
+    padding-bottom: 4px;
+    padding: 4px;
+    padding-top: 4px;
+    background-color: lightcyan;
+    width: 150px;
+    height: 30px;
+    vertical-align: middle;
+    color: darkred;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 16px;
+}
+
 textarea {
     border: 2px solid grey;
     padding-bottom: 3px;
@@ -215,4 +304,15 @@ th {
     width: 180px;
     display: inline-block;
     text-align: center;
+}
+
+/* Задаем фон страницы, где выводится отдельно крупным планом фото товара */
+.pic_fon {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Стиль блока с картинкой */
+.big_pic {
+    text-align: center;
+    padding-top: 10px;
 }

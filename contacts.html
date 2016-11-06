@@ -22,9 +22,9 @@
         </div>
 <h1>Напишите нам</h1>
     <form>
-    <legend><span>Заполните, пожалуйста, обращение</span></legend><br>
+    <span>Заполните, пожалуйста, обращение</span><br>
     <label><input type="text" placeholder="Укажите Ваше имя" required> * Имя</label><br>
-        <label><input type="email" placeholder="Укажите Вашу электронную почту" required class="input"> * E-mail</label><br>
+    <label><input type="email" placeholder="Укажите Вашу электронную почту" required class="input"> * E-mail</label><br>
     <label><input list="Theme" placeholder="Тема Вашего обращения" required> * Тема</label><br>
     <datalist id="Theme">
     <option>Не могу к Вам дозвониться</option>
@@ -37,10 +37,10 @@
     Текст обращения  *<br>
     <textarea cols="48" rows="10" required placeholder="Содержание Вашего обращения"></textarea><br>
     </form>
-    <input type="submit" value="ОК"><br>
-    <input type="reset" value="Очистить"><br>
-    <input type="button" value="Сохранить + новая"> 
-   
+<div>
+    <input type="submit" class="cont_butt_OK" value="ОК">
+    <input type="reset" class="cont_butt_KO" value="ОТМЕНА"><br>
+</div>   
     <p><span class="req"> * </span>- обязательное для заполнения</p>
 <h2>Адрес</h2>
  <ul>
