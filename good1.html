@@ -8,9 +8,20 @@
 <body>
     
 <header>
-       <a href="catalogue.html"> Назад в каталог</a>
-       <hr>
+<div class="header">
+    <div id="header_fix">
+        <a href="catalogue.html" class="back">Назад в каталог</a>
+        <a href="good2.html" class="back">Следующий товар</a>
+        <hr>
+    </div>
+</div>       
 </header>
+
+<ul class="breadcrumbs">
+    <li><a href="index.html">Главная</a></li> >
+    <li><a href="catalogue.html">Каталог</a></li> >
+    <li>Металлический стул</li>
+    </ul>
 
 <h1>Металлический стул МС-1У</h1>
     <a href="g1_pic.html" target="_blank" class="good_pic"><img src="img/chair-metal-small.jpg"
@@ -70,10 +81,23 @@
      <li>в разных цветах порошковой окраски;</li>
      <li>с черным, коричневым или бежевым сиденьем.</li>
       </ul>
-    <div class="footer">
-        <hr>
-        <p> &#169; Все права защищены, Зырянов Борис, при обучении в <a href="https://geekbrains.ru" target="_blank">GeekBrains</a><sup>&#174;</sup>, октябрь 2016 г.</p>    
-    </div>
+<div class="footer">
+    <hr>
+    <p> &#169; Все права защищены, Зырянов Борис, при обучении в <a href="https://geekbrains.ru" target="_blank">GeekBrains</a><sup>&#174;</sup>, октябрь 2016 г.</p>    
+    <ul class="navifoot">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalogue.html">Каталог</a>
+            <ul class="navifoot">
+                <li><a href="good1.html">Металлический стул</a></li>
+                <li><a href="good2.html">Деревянный стул</a></li>
+                <li><a href="good3.html">Металлический табурет</a></li>
+                <li><a href="good4.html">Деревянный табурет</a></li>
+            </ul>
+        </li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</div>
+
 </body>
 
 </html>

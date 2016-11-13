@@ -12,6 +12,23 @@ a {
     
 }
 
+/* Делаем фиксированный заголовок */
+.header {
+    height: 50px;
+    z-index: 100;
+}
+
+#header_fix {
+    display: block;
+    height: 28px;
+    width: 100%;
+    position: fixed;
+    padding-top: 10px;
+    background-color: lightgoldenrodyellow;
+    top: 0;
+    
+}
+
 /* Создаем стиль родительского блока */
 .container {
     display: inline-block;
@@ -71,11 +88,27 @@ a {
     font-size: 13px;
     color: darkblue;
     background-color: lightyellow;
-    height: 102px;
+    height: 170px;
     text-align: right;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-right: 15px;
+}
+
+/*Дополнительная навигация в подвале*/
+ul.navifoot {
+    text-align: left;
+    padding-left: 16px;
+    list-style-type: none;
+}
+
+ul.navifoot li {
+    list-style-type: none;
+}
+
+ul.navifoot li: hover {
+    color: red;
+    background-color: lightyellow;
 }
 
 /* Создаем стиль меню */
@@ -137,6 +170,7 @@ h2 {
 
 h1 {
     color: darkblue;
+    margin-left: 4px;
 }
 
 /* Задаем стиль цвета фирменного шрифта */
@@ -316,3 +350,46 @@ th {
     text-align: center;
     padding-top: 10px;
 }
+
+/* Создаем стиль списка для хлебных крошек */
+/*
+nav {
+    display: block;
+    position: relative;
+}
+*/
+
+ul.breadcrumbs {
+    margin: 0;
+    padding: 14px;
+}
+
+ul.breadcrumbs li {
+    display: inline;
+    list-style: none;
+    border: 1px solid darkcyan;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 8px;
+    text-align: center;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+ul.breadcrumbs li :hover {
+    color: red;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Подсветка обратно в каталог */
+a.back {
+    margin-left: 8px;
+}
+
+a.back:hover {
+    color: red;
+    background-color: lightgoldenrodyellow;    
+}
+
